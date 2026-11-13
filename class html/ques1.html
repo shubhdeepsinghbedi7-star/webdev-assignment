@@ -1,0 +1,36 @@
+// a coding club's recruitment page needs a anavbar where the logo stays on the far left, the three nav links are grouped together and pushed to the far right, links are vertically centred with the logo, and there is a 24px gap between the links.The html below is fixed - don not change it. Write only the CSS for."navbar" and ".navlinks" needed to achieve thois.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar</title>
+
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">CodeClub</div>
+
+        <div class="nav-links">
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Join</a>
+        </div>
+
+    </nav>
+
+</body>
+</html>

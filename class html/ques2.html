@@ -1,0 +1,31 @@
+/*the three product cards below currently stack one below another(default block behaviour ). Modify only the ".products??" CSSz so that: thecards sit in a single row, there is a 16px gap betweem them, and if the screen becomes too narrow to fit all threee at their 200px width, the cards wrap onto a second line instead of shrinking or overflowing.*/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cards</title>
+
+    <style>
+        .products {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="products">
+        <div class="card">Product 1</div>
+        <div class="card">Product 2</div>
+        <div class="card">Product 3</div>
+    </div>
+
+</body>
+</html>

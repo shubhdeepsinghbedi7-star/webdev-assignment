@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout Practice</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 60px 1fr;
+            grid-template-columns: 200px 1fr 250px;
+            grid-template-areas:
+                "nav nav nav"
+                "sidebar main notifications";
+        }
+
+        header {
+            grid-area: nav;
+            background-color: #0679eb;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 1.2rem;
+        }
+
+        aside.sidebar {
+            grid-area: sidebar;
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+
+        aside.notifications {
+            grid-area: notifications;
+            background-color: #bdc3c7;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Top Navbar
+    </header>
+
+    <aside class="sidebar">
+        Left Sidebar
+    </aside>
+
+    <main>
+        Main Content Area
+    </main>
+
+    <aside class="notifications">
+        Notifications Panel
+    </aside>
+
+</body>
+</html>

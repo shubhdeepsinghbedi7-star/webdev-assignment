@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Flexbox and Grid Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+       
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #222;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 8%;
+        }
+
+        .card {
+            flex: 1 1 220px;
+            padding: 25px;
+            background: rgb(250, 95, 95);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+
+ 
+
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            padding: 20px 8% 50px;
+        }
+
+        .main-content {
+            grid-row: span 2;
+            padding: 30px;
+            background: rgb(168, 104, 104);
+            border-radius: 10px;
+        }
+
+        .content-box {
+            padding: 25px;
+            background: rgb(123, 92, 92);
+            border-radius: 10px;
+        }
+
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .main-content {
+                grid-row: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="logo">MyWebsite</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section class="cards">
+
+        <article class="card">
+            <h2>Project 1</h2>
+            <p>Web dev project using HTML and CSS.</p>
+        </article>
+
+        <article class="card">
+            <h2>Project 2</h2>
+            <p>Java project demonstrating ik nothing.</p>
+        </article>
+
+        <article class="card">
+            <h2>Project 3</h2>
+            <p>Un-Responsive website designed by me.</p>
+        </article>
+
+    </section>
+
+
+
+    <section class="content">
+
+        <article class="main-content">
+            <h1>Main BOX</h1>
+            <p>
+                This is the main area to larp.
+            </p>
+        </article>
+
+        <article class="content-box">
+            <h2>Latest News</h2>
+            <p>New updates ain't gonna arrive.</p>
+        </article>
+
+        <article class="content-box">
+            <h2>Quick Links</h2>
+            <p>NON-Useful links .</p>
+        </article>
+
+    </section>
+
+</body>
+</html>
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sticky Navigation and Card Overlay</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 15px;
+      background-color: #222;
+    }
+
+    nav a {
+      margin-right: 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    .card {
+      position: relative;
+      max-width: 500px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .card img {
+      display: block;
+      width: 100%;
+    }
+
+    .overlay {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 15px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .content {
+      max-width: 700px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+  <section id="home" class="content">
+    <h1>My Portfolio</h1>
+  </section>
+
+  <section class="card">
+    <img
+      src="pot.jpeg">
+
+      <div class="overlay">
+      <h2>My photo</h2>
+      <p>MEEEE.</p>
+    </div>
+
+  </section>
+
+  <section id="about" class="content">
+    <h2>About</h2>
+    <p>
+      I am a student interested in programming, web development,
+      and building technology projects.
+    </p>
+
+    <p>
+      This additional content allows the page to scroll and
+      demonstrates the sticky navigation.
+    </p>
+  </section>
+
+  <section id="projects" class="content">
+    <h2>Projects</h2>
+    <p>
+      My projects include web applications, startup ideas,
+      and programming exercises.
+    </p>
+  </section>
+
+  <section id="contact" class="content">
+    <h2>Contact</h2>
+    <p>Email: shubhdeepsingh2004@gmail.com.</p>
+  </section>
+
+</main>
+
+</body>
+
+</html>
+

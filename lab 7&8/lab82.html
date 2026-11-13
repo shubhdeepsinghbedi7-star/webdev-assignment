@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>TECHFEST 2026</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: rgb(135, 157, 165);
+            margin: 0;
+        }
+
+        #header {
+            background-color: rgb(161, 161, 200);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: 25%;
+        }
+
+        .events {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        input, select {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 8px;
+            background-color: rgb(117, 117, 163);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(117, 117, 163);
+        }
+
+        table {
+            width: 90%;
+            margin: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgb(151, 151, 189);
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <h1>TECHFEST 2026</h1>
+
+        <p>National Level Technical Symposium</p>
+
+    </div>
+
+    <nav>
+
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Schedule</a>
+        <a href="#">Registration</a>
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <h2>Events</h2>
+
+    <div class="events">
+
+        <div class="card">
+
+            <h3>Code Clash</h3>
+
+            <p>Type: Coding Competition</p>
+            <p>Duration: 2 Hours</p>
+            <p>Team Size: 1-2</p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Web Warriors</h3>
+
+            <p>Type: Web Development</p>
+            <p>Duration: 1.5 Hours</p>
+            <p>Team Size: 1-3</p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Tech Quiz</h3>
+
+            <p>Type: Technical Quiz</p>
+            <p>Duration: 1 Hour</p>
+            <p>Team Size: 2-3</p>
+
+        </div>
+
+    </div>
+
+    <div class="form">
+
+        <h2>Registration Form</h2>
+
+        <form>
+
+            Student Name:
+            <input type="text">
+            <br><br>
+
+            Email:
+            <input type="email">
+            <br><br>
+
+            USN:
+            <input type="text">
+            <br><br>
+
+            Phone Number:
+            <input type="tel">
+            <br><br>
+
+            Select Event:
+
+            <select>
+
+                <option>Code Clash</option>
+                <option>Web Warriors</option>
+                <option>Tech Quiz</option>
+
+            </select>
+
+            <br><br>
+
+            Team Size:
+
+            <select>
+
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+
+            </select>
+
+            <br><br>
+
+            Gender:
+
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+
+            <br><br>
+
+            <input type="checkbox">
+
+            I agree to the rules.
+
+            <br><br>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+    </div>
+
+    <h2>Event Schedule</h2>
+
+    <table>
+
+        <tr>
+
+            <th>Event</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Venue</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Code Clash</td>
+            <td>15 Sept</td>
+            <td>10:00 AM</td>
+            <td>Lab 1</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Web Warriors</td>
+            <td>15 Sept</td>
+            <td>2:00 PM</td>
+            <td>Lab 2</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Tech Quiz</td>
+            <td>16 Sept</td>
+            <td>11:00 AM</td>
+            <td>Seminar Hall</td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

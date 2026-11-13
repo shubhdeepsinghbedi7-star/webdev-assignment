@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Portfolio Header & Footer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 20px 8%;
+            background: lightseagreen;
+            color: white;
+        }
+
+        .logo {
+            flex: 1;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+        }
+
+        nav {
+            flex: 2;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        main {
+            flex: 1;
+            padding: 60px 8%;
+        }
+
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px 8%;
+            background: #222;
+            color: white;
+        }
+
+        .footer-section {
+            flex: 1 1 200px;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .copyright {
+            flex-basis: 100%;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #555;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            .contact {
+                justify-content: center;
+            }
+
+            footer {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>Shubhdeep</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="contact">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+
+    </header>
+
+    <main>
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+            I am a student and developer interested in programming,
+            web development, and technology.
+        </p>
+    </main>
+
+    <footer>
+
+        <section class="footer-section">
+            <h2>About Me</h2>
+            <p>
+                Student interested in building useful technology projects.
+            </p>
+        </section>
+
+        <section class="footer-section">
+            <h2>Quick Links</h2>
+
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Skills</a>
+                <a href="#">Contact</a>
+            </div>
+        </section>
+
+        <section class="footer-section">
+            <h2>Contact</h2>
+            <p>Email: shubhdeepsingh2004@gmail.com</p>
+            <p>India</p>
+        </section>
+
+        <div class="copyright">
+            <p> 2026 Shubhdeep Singh.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+

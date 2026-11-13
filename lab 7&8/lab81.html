@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>College Student Portal</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            margin: 0;
+        }
+
+        #header {
+            background-color: rgb(132, 132, 175);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .box {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        input {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        select {
+            padding: 5px;
+            margin: 5px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgb(132, 132, 175);
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <h1>College Student Portal</h1>
+
+        <p>Student Registration & Academic Dashboard</p>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Courses</a>
+        <a href="#">Results</a>
+        <a href="#">Logout</a>
+
+    </nav>
+
+
+    <div class="box">
+
+        <h2>Student Information</h2>
+
+        <form>
+
+            Full Name:
+            <input type="text">
+            <br><br>
+
+            USN:
+            <input type="text">
+            <br><br>
+
+            Email:
+            <input type="email">
+            <br><br>
+
+            Branch:
+
+            <select>
+                <option>CSE</option>
+                <option>ISE</option>
+                <option>ECE</option>
+            </select>
+
+            <br><br>
+
+            Semester:
+
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+            <br><br>
+
+            Date of Birth:
+            <input type="date">
+
+        </form>
+
+    </div>
+
+
+    <div class="box">
+
+        <h2>Course Selection</h2>
+
+        <input type="checkbox">
+        Web Development
+        <br>
+
+        <input type="checkbox">
+        Data Structures
+        <br>
+
+        <input type="checkbox">
+        Database Management
+        <br>
+
+        <input type="checkbox">
+        Operating Systems
+
+    </div>
+
+
+    <div class="box">
+
+        <h2>Academic Performance</h2>
+
+        <table>
+
+            <tr>
+                <th>Subject</th>
+                <th>Internal</th>
+                <th>External</th>
+                <th>Total</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>Web Development</td>
+                <td>25</td>
+                <td>65</td>
+                <td>90</td>
+                <td>A+</td>
+            </tr>
+
+            <tr>
+                <td>Data Structures</td>
+                <td>22</td>
+                <td>58</td>
+                <td>80</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>DBMS</td>
+                <td>20</td>
+                <td>55</td>
+                <td>75</td>
+                <td>B+</td>
+            </tr>
+
+            <tr>
+                <td>Operating Systems</td>
+                <td>23</td>
+                <td>60</td>
+                <td>83</td>
+                <td>A</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>

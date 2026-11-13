@@ -1,0 +1,40 @@
+/*   the three info block below currently stack vertically (default block layout). modify the css so that: 
+they display in a single row with each block taking equal width(using flex-grow, not fixed widths), a
+visible vertical divider appears between blocks(using border ledt), and the text inside each block is
+centred both horizontally and vertically.  */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration Info</title>
+  <style>
+    .event-info {
+      display: flex;
+    }
+    
+    .info-block {
+      flex-grow: 1; 
+      border-left: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .info-block:first-child {
+      border-left: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="event-info">
+    <div class="info-block">Date: Oct 12</div>
+    <div class="info-block">Venue: Auditorium</div>
+    <div class="info-block">Fee: ₹200</div>
+  </div>
+
+</body>
+</html>
