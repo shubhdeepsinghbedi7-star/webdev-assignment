@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Design System</title>
+
+    <style>
+       
+        :root {
+
+            --color-primary: #2563eb;
+            --color-secondary: #64748b;
+            --color-background: #f8fafc;
+            --color-surface: #ffffff;
+            --color-text: #1e293b;
+            --color-muted: #64748b;
+
+
+            --font-family: Arial, sans-serif;
+
+
+            --font-xs: 0.75rem;
+            --font-sm: 0.875rem;
+            --font-md: 1rem;
+            --font-lg: 1.25rem;
+            --font-xl: 2rem;
+
+
+            --weight-normal: 400;
+            --weight-medium: 500;
+            --weight-bold: 700;
+
+
+            --line-normal: 1.5;
+            --line-tight: 1.2;
+
+
+            --space-sm: 8px;
+            --space-md: 16px;
+            --space-lg: 24px;
+            --space-xl: 32px;
+
+
+            --radius: 10px;
+        }
+
+       
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            font-size: var(--font-md);
+            line-height: var(--line-normal);
+            color: var(--color-text);
+            background: var(--color-background);
+        }
+
+        
+        h1 {
+            font-size: var(--font-xl);
+            font-weight: var(--weight-bold);
+            line-height: var(--line-tight);
+            margin-bottom: var(--space-md);
+        }
+
+        h2 {
+            font-size: var(--font-lg);
+            font-weight: var(--weight-bold);
+            line-height: var(--line-tight);
+        }
+
+        p {
+            font-size: var(--font-md);
+            font-weight: var(--weight-normal);
+            line-height: var(--line-normal);
+            color: var(--color-muted);
+        }
+
+    
+        button {
+            padding: var(--space-sm) var(--space-md);
+            font-family: var(--font-family);
+            font-size: var(--font-md);
+            font-weight: var(--weight-medium);
+            line-height: var(--line-normal);
+            color: white;
+            background: var(--color-primary);
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+        }
+
+    
+        .card {
+            padding: var(--space-lg);
+            background: var(--color-surface);
+            border-radius: var(--radius);
+            margin-top: var(--space-lg);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+    
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--space-xl);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>My Design System</h1>
+
+        <p>
+            This webpage uses reusable CSS variables for colors,
+            typography, spacing, and components.
+        </p>
+
+        <button>View Projects</button>
+
+        <article class="card">
+            <h2>My Project</h2>
+            <p>
+                This card uses the same typography, spacing,
+                colors, and design tokens as the rest of the page.
+            </p>
+            <button>Learn More</button>
+        </article>
+
+    </main>
+
+</body>
+</html>
+```
